@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>A List of All Reviews</title>
-</head>
-<body>
-<header>
-    <h1>A List of All Reviews</h1>
-</header>
+  <head>
+    <link rel="stylesheet" href="/styles/stylesheet.css" />
+    <title>Movie Reviews</title>
+  </head>
+  <body>
+    <header>
+      <h1>Movie Reviews</h1>
+    </header>
 
-<main>
-    <ul>
-        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"
-                                                       th:text="${review.title}"></a>
-        <span th:text="${review.category}"></span>
-        <span th:text="${review.date}"></span></li>
-    </ul>
-</main>
+    <main>
+      <ul>
+        <li th:each="review: ${reviewsModel}">
+          <a
+            th:href="@{/review(id=${review.id})}"
+            th:text="${review.title}"
+          ></a>
+          <span th:text="${review.category}"></span>
+          <span th:text="${review.date}"></span>
+        </li>
+      </ul>
+    </main>
 
-<footer>
-    <small>&copy WCCI 2021</small>
-</footer>
-
-</body>
+    <footer>
+      <small>&copy WCCI 2021</small>
+    </footer>
+  </body>
 </html>
