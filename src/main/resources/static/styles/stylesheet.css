@@ -1,0 +1,63 @@
+body {
+  background-color: #2A3D45;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.wrapper {
+    background-color: #A5A58D;
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#reviews {
+      display: flex;
+      flex-direction: column;
+}
+
+#container {
+margin: auto;
+padding:2rem;
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    flex:1;
+    background-color: #F0EFEB;
+}
+
+.item a {
+font-size: 20px;
+font-weight: 600;
+color: #ffffff;
+text-decoration: none;
+background-color: #B7B7A4;
+padding: 3rem;
+align-self: center;
+flex:4;
+}
+
+.item a:hover {
+color: #2A3D45;
+background-color: #DDBEA9;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+

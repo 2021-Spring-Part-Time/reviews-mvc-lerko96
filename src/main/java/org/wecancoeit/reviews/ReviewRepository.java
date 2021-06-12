@@ -13,9 +13,9 @@ public class ReviewRepository {
 
     //constructor to handle our database
     public ReviewRepository() {
-        Review parasite = new Review(1L, "Parasite", "Movie", "Rating: B+.  I liked this movie, plenty of imagery and a wild story to go along.  Happily watch again.", "2019");
-        Review tenaciousD = new Review(2L, "Tenacious D", "Movie", "Rating: B.  Laid back comedy with great original music. ", "2006");
-        Review casino = new Review(3L, "Resevoir Dogs", "Movie", "Rating: B+.  Movie takes place in one setting mostly, I like how the storyline gets delivered in pieces as the movie continues.", "1992");
+        Review parasite = new Review(1L, "Parasite", "B", "I liked this movie, plenty of imagery and a wild story to go along.  Happily watch again.", "2019", "/images/parasite.jpg");
+        Review tenaciousD = new Review(2L, "Tenacious D", "B", "Laid back comedy with great original music. ", "2006", "/images/tenaciousd.jpg");
+        Review casino = new Review(3L, "Resevoir Dogs", "B+", "Movie takes place in one setting mostly, I like how the storyline gets delivered in pieces as the movie continues.", "1992", "/images/casino.jpg");
 
         reviewsList.put(parasite.getId(), parasite);
         reviewsList.put(tenaciousD.getId(), tenaciousD);

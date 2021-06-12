@@ -10,8 +10,8 @@ import java.util.Collection;
 public class ReviewRepositoryTest {
 
     private ReviewRepository underTest;
-    private Review reviewOne = new Review(1L, "review one title", "review category", "content", "2020");
-    private Review reviewTwo = new Review(2L, "review two title", "review category", "content", "2020");
+    private Review reviewOne = new Review(1L, "review one title", "review category", "content", "2020", "/images/parasite.jpg");
+    private Review reviewTwo = new Review(2L, "review two title", "review category", "content", "2020", "/images/tenacioud");
 
 
     @Test

@@ -4,9 +4,10 @@ public class Review {
 
     private Long id;
     private String title;
-    private String category;
+    private String rating;
     private String content;
     private String date;
+    private String imageUrl;
 
     public Long getId() {
         return id;
@@ -17,7 +18,7 @@ public class Review {
     }
 
     public String getCategory(){
-        return category;
+        return rating;
     }
 
     public String getContent(){
@@ -28,12 +29,17 @@ public class Review {
         return date;
     }
 
-    public Review(long id, String title, String category, String content, String date) {
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public Review(long id, String title, String rating, String content, String date, String imageUrl) {
         this.id = id;
         this.title = title;
-        this.category = category;
+        this.rating = rating;
         this.content = content;
         this.date = date;
+        this.imageUrl = imageUrl;
     }
 
 }

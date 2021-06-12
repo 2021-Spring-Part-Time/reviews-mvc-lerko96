@@ -5,25 +5,25 @@
     <title>Movie Reviews</title>
   </head>
   <body>
-    <header>
-      <h1>Movie Reviews</h1>
-    </header>
-
-    <main>
-      <ul>
-        <li th:each="review: ${reviewsModel}">
-          <a
-            th:href="@{/review(id=${review.id})}"
-            th:text="${review.title}"
-          ></a>
-          <span th:text="${review.category}"></span>
-          <span th:text="${review.date}"></span>
-        </li>
-      </ul>
-    </main>
-
-    <footer>
-      <small>&copy WCCI 2021</small>
-    </footer>
+    <div class="wrapper">
+      <main>
+        <h1>Movie Reviews</h1>
+          <section id="reviews">
+            <div id="container">
+              <div class="item" th:each="review: ${reviewsModel}">
+              <a
+                th:href="@{/review(id=${review.id})}"
+                th:text="${review.title}"
+              >
+              </a>
+              <div class="item" th:text="${review.category}"></div>
+              <div class="item" th:text="${review.date}"></div>
+            </div>
+          </section>
+      </main>
+      <footer>
+        <small>&copy WCCI 2021</small>
+      </footer>
+    </div>
   </body>
 </html>
