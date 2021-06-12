@@ -15,11 +15,13 @@ public class ReviewRepository {
     public ReviewRepository() {
         Review parasite = new Review(1L, "Parasite", "B", "I liked this movie, plenty of imagery and a wild story to go along.  Happily watch again.", "2019", "/images/parasite.jpg");
         Review tenaciousD = new Review(2L, "Tenacious D", "B", "Laid back comedy with great original music. ", "2006", "/images/tenaciousd.jpg");
-        Review casino = new Review(3L, "Resevoir Dogs", "B+", "Movie takes place in one setting mostly, I like how the storyline gets delivered in pieces as the movie continues.", "1992", "/images/casino.jpg");
+        Review resevoirDogs = new Review(3L, "Resevoir Dogs", "B+", "Movie takes place in one setting mostly, I like how the storyline gets delivered in pieces as the movie continues.", "1992", "/images/resevoirDogs.jpg");
+        Review ironGiant = new Review(4L, "The Iron Giant", "A", "Great movie with a positive ending.  Can sit down and watch anytime.", "1999", "/images/irongiant.jpg");
 
         reviewsList.put(parasite.getId(), parasite);
         reviewsList.put(tenaciousD.getId(), tenaciousD);
-        reviewsList.put(casino.getId(), casino);
+        reviewsList.put(resevoirDogs.getId(), resevoirDogs);
+        reviewsList.put(ironGiant.getId(), ironGiant);
     }
 
     //constructor for testing purposes only...uses varArgs to add none or as many objects as we want
