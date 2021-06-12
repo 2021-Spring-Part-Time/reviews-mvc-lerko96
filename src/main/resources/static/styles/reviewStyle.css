@@ -35,6 +35,7 @@ display:flex;
 flex-direction:column;
 background-color: #003566;
 color: #FFD60A;
+font-size: 1.5rem;
 }
 
 .subSub {
@@ -45,9 +46,16 @@ flex-direction: row;
 }
 
 .subSubSub {
+border: 1px solid red;
 display: flex;
 flex-direction: row;
 text-align: center;
+justify-content: center;
+}
+
+.subSubSub p {
+    margin: 0 auto;
+    padding 0 1rem;
 }
 
 h1 {

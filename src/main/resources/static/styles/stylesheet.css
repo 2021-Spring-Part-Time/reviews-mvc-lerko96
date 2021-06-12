@@ -1,20 +1,38 @@
 body {
-  background-color: #2A3D45;
+  background-color: #000814;
   margin: 0 auto;
   font-size: 24px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .wrapper {
-    background-color: #A5A58D;
+  background-color: #000814;
   display: flex;
   flex-direction: column;
   max-width: 640px;
   height: auto;
   margin: 0 auto;
   padding: 0;
+  text-align: center;
+}
+
+nav {
+background-color: #001D3D;
+margin: 0;
+padding: 1rem;
+}
+
+nav a {
+color: #FFC300;
+font-size: 1.5rem;
+font-weight:600;
+letter-spacing:.15rem;
+text-decoration: none;
 }
 
 h1 {
+color: #FFC300;
+text-transform: uppercase;
     text-align: center;
 }
 
@@ -24,33 +42,35 @@ h1 {
 }
 
 #container {
+border: 1px solid yellow;
 margin: auto;
-padding:2rem;
 }
 
 .item {
     text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    padding: 3rem;
+    padding: 1rem;
     flex:1;
-    background-color: #F0EFEB;
+    background-color: #003566;
+    color: #FFD60A;
 }
 
 .item a {
 font-size: 20px;
 font-weight: 600;
-color: #ffffff;
+color: #003566;
 text-decoration: none;
-background-color: #B7B7A4;
-padding: 3rem;
+background-color: #FFD60A;
+padding: 1rem;
 align-self: center;
 flex:4;
 }
 
 .item a:hover {
-color: #2A3D45;
-background-color: #DDBEA9;
+color: #FFC300;
+background-color: #001D3D;
 }
 
 footer {
