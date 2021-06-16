@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/reviewStyle.css" />
+    <title th:text="${reviewModel.title}">A Review</title>
+</head>
+<body>
+<div id="wrapper">
+<nav>
+    <a href="/reviews">REVIEWS</a>
+</nav>
+<main>
+    <div class="sub">
+        <div class="subSub">
+        <img th:src="${reviewModel.imageUrl}">
+        <span>
+
+        <h1 th:text="${reviewModel.title}"></h1>
+             <div class="subSubSub">
+        <p th:text="${reviewModel.category}"></p>
+        <p th:text="${reviewModel.date}"></p>
+        </span>
+        </div>
+        </div>
+    <p th:text="${reviewModel.content}"></p>
+
+    </div>
+</main>
+
+<footer>
+    <small>&copy WCCI 2021</small>
+</footer>
+</div>
+</body>
+</html>
